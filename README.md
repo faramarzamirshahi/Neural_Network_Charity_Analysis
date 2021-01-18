@@ -6,15 +6,20 @@ They have raised and donated $10 billion in the past 20 years. This money has be
 # Results
 * Data Preprocessing<br>
 ** We want to determine the IS_SUCCESSFUL outcome<br>
-** What variable(s) are considered to be the features for your model?<br>
-** The EIN, NAME variables have no effect on the outcome and shoud be removed<br>
-* Compiling, Training, and Evaluating the Model<br>
-** I used:
-The number of inputs set to number of variables. 
-for the 1st layer I set the # of neurons to 2 * <number of varirables> (Recommendation is 2 to 4 times the number)
-for 2nd layer I set the number of nodes to 1/2 of the number of variables. I chose this value based on my observation from various examples and the fact that most of the processing is completed in layer1 and in layer2 data is already reduced.
-With this setting we only managed to obtain 72.4% accuracy?<br>
+** We consider all the fields in the file to be a feature with the execption of EIN and NAME. 
+** `is_successful` is the target outcome that the model should predict<br>
+** The EIN, NAME features have no effect on the outcome and were removed<br>
 
+# Compiling, Training, and Evaluating the Model<br>
+For my 1st model I used:
+
+* The number of inputs = number of features. 
+*  # of neurons in the 1st layer = to 2 * <number of features> (Recommendation is 2 to 4 times the # of features)
+*  # of neurons in the 2nd layer =  1/2 of the number of features.<br>
+  I chose this value based on my observation from various examples. Also after the first layer the amount of data is reduced.
+
+With these settings we only managed to obtain 72.4% accuracy?<br>
+![first model](1stModelAccuracy.png)<br>
 
 I then tried the below settings for the model<br>
 2nd Model: 3 * # of var in the first layer<br>
@@ -22,7 +27,7 @@ I then tried the below settings for the model<br>
 4th Model same as first but Reducing the nerons in the first layer to # of vars<br>
 
 I captured the peformance of each as shown below
-![first model](1stModelAccuracy.png)<br>
+
 ![second model](2ndModelAccuracy.png)<br>
 ![third model](3rdModelAccuracy.png)<br>
 ![4th model](4thModelAccuracy.png)<br>
