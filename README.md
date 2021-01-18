@@ -1,11 +1,11 @@
 # Neural_Network_Charity_Analysis
 # Overview of the analysis
-Alphbet Soup, is a non-for-profit philantropic organization dedicated to protect the environment, improving people's well-being, and unify the world  <br>
+Alphabet Soup, is a non-for-profit philantropic organization dedicated to protect the environment, improving people's well-being, and unify the world  <br>
 They have raised and donated $10 billion in the past 20 years. This money has been used to invest in life saving technologies and organized reforestation groups around the world. Unfortunately there have been cases in the past where a borrowing organization has disappeared with the funds. Alphabet wants to run analysis on its data to determine what organization is worth donating to and which are too high-risk. We are going to use deep learning models to determine which organizations should receive donations.
 
 # Results
 * Data Preprocessing<br>
-** We want to determine the IS_SUCCESSFUL binary outcome of the prediction<br>
+** We want to determine the IS_SUCCESSFUL binary outcome<br>
 ** We consider all the fields in the file to be a feature with the execption of EIN and NAME. 
 ** `is_successful` is the target outcome that the model should predict<br>
 ** The EIN, NAME features have no effect on the outcome and were removed<br>
@@ -37,6 +37,6 @@ As seen that the change in the model settings did not have a big change the mode
 
 # Summary
 It seems that to get a better peformance more data is needed as changing the settings has not much effect<br>
-The same analysis with the same dataset but using Random Forest model and SVM gave 0.716 and 0.708 accuracy. <br>
+<b>The same analysis with the same dataset but using Random Forest model and SVM gave 0.716 and 0.708 accuracy.</b> <br>
 
 This indicates that overall the deep learning model peformed better that the other two model even by a slight margin
