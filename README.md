@@ -5,7 +5,7 @@ They have raised and donated $10 billion in the past 20 years. This money has be
 
 # Results
 * Data Preprocessing<br>
-** We want to determine the IS_SUCCESSFUL outcome<br>
+** We want to determine the IS_SUCCESSFUL binary outcome of the prediction<br>
 ** We consider all the fields in the file to be a feature with the execption of EIN and NAME. 
 ** `is_successful` is the target outcome that the model should predict<br>
 ** The EIN, NAME features have no effect on the outcome and were removed<br>
@@ -14,8 +14,8 @@ They have raised and donated $10 billion in the past 20 years. This money has be
 For my 1st model I used:
 
 * The number of inputs = number of features. 
-*  # of neurons in the 1st layer = to 2 * <number of features> (Recommendation is 2 to 4 times the # of features)
-*  # of neurons in the 2nd layer =  1/2 of the number of features.<br>
+*  number of neurons in the 1st layer = to 2 * <number of features> (Recommendation is 2 to 4 times the # of features)
+*  number of neurons in the 2nd layer =  1/2 of the number of features.<br>
   I chose this value based on my observation from various examples. Also after the first layer the amount of data is reduced.
 
 With these settings we only managed to obtain 72.4% accuracy?<br>
