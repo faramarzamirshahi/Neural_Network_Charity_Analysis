@@ -37,6 +37,6 @@ As seen that the change in the model settings did not have a big change the mode
 
 # Summary
 It seems that to get a better peformance more data is needed as changing the settings has not much effect<br>
-<b>The same analysis with the same dataset but using Random Forest model and SVM gave 0.716 and 0.708 accuracy.</b> <br>
+<b>The same analysis with the same dataset but using Random Forest and SVM models[see link](https://github.com/faramarzamirshahi/Neural_Network_Charity_Analysis/blob/main/AlphabetSoupCharity_performance.ipynb) gave 0.716 and 0.708 accuracy.</b> <br>
 
 This indicates that overall the deep learning model peformed better that the other two model even by a slight margin
